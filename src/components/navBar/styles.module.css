@@ -1,0 +1,32 @@
+.nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #c56cee;
+    border-bottom: 3px solid black;
+    font-family: sans-serif;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.menuLink:hover {
+    text-decoration: underline;
+}

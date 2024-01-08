@@ -1,0 +1,48 @@
+.productos {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-family: sans-serif;
+    grid-template-rows: auto 1fr auto; /* Definición de tres filas: imagen, título, botón */
+}
+
+.contenedor {
+    padding: 1rem;
+    background-color: #fabdbd;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.img {
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.ver {
+    text-decoration: none;
+    background-color:  #c56cee;
+    color: white;
+    padding: .5rem;
+    width: max-content;
+    border-radius: .5rem;
+    transition: .2s;
+}
+.ver:hover {
+    background-color: black;
+    color: white;
+}
+
+.titulo,
+.precio,
+.categoria {
+    max-height: 3em; /* Altura máxima para cada elemento */
+    overflow: hidden; /* Oculta el contenido que excede el límite */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) para indicar texto truncado */
+    margin: 0; /* Asegura que no haya márgenes adicionales */
+    width: 100%; /* Ancho definido para los elementos */
+    white-space: nowrap; /* Evita el retorno de línea */
+}
+
