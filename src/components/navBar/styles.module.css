@@ -30,3 +30,51 @@
 .menuLink:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 900px) {
+    .nav {
+      flex-direction: column; /* Cambia a columna en dispositivos pequeños */
+      align-items: flex-start; /* Alinea al principio */
+      padding: 1rem;
+    }
+  
+    .menu {
+      margin-top: 1rem; /* Espacio entre el logo y el menú */
+      width: 100%; /* Ocupa todo el ancho disponible */
+      justify-content: space-around; /* Distribuye los elementos */
+    }
+  
+    .menuLink {
+      font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+    .logo {
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .nav {
+      flex-direction: column; /* Cambia a columna en dispositivos pequeños */
+      align-items: flex-start; /* Alinea al principio */
+      padding: 1rem;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    .menu {
+      
+      width: 100%; /* Ocupa todo el ancho disponible */
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+  
+    .menuLink {
+      font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+    .logo {
+        font-size: 10px;
+        
+    }
+  }
